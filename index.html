@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الموظفين</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>📋 تسجيل الموظف</h2>
+    <input type="text" id="empName" placeholder="👤 الاسم">
+    <input type="tel" id="empPhone" placeholder="📞 رقم الهاتف">
+    <input type="password" id="empPassword" placeholder="🔑 كلمة المرور">
+    <button id="registerEmpButton">✅ تسجيل</button>
+
+    <h3>📂 لديك حساب بالفعل؟</h3>
+    <a href="employee_login.html">🔑 تسجيل الدخول</a>
+
+    <script src="employee_register.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل دخول الموظفين</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>🔑 تسجيل دخول الموظف</h2>
+    <input type="tel" id="loginPhone" placeholder="📞 رقم الهاتف">
+    <input type="password" id="loginPassword" placeholder="🔑 كلمة المرور">
+    <button id="loginEmpButton">🚀 تسجيل الدخول</button>
+
+    <script src="employee_login.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة تحكم الموظفين</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>📋 لوحة تحكم الموظف</h2>
+    <h3>مرحبًا، <span id="empName"></span></h3>
+
+    <h3>📌 الطلبات المتاحة:</h3>
+    <ul id="ordersList"></ul>
+
+    <div id="orderDetails" style="display: none;">
+        <h3>📄 تفاصيل الطلب</h3>
+        <p id="orderText"></p>
+        <input type="number" id="orderPrice" placeholder="💰 أدخل السعر">
+        <button id="sendPrice">📨 إرسال السعر</button>
+        <button id="startOrder">🚀 بدء التنفيذ</button>
+    </div>
+
+    <div id="paymentSection" style="display: none;">
+        <h3>💰 إرسال رابط الدفع</h3>
+        <button id="sendPayment">🔗 إرسال عبر واتساب</button>
+    </div>
+
+    <div id="chatSection" style="display: none;">
+        <h3>💬 المحادثة</h3>
+        <textarea id="chatMessage" placeholder="✍️ اكتب رسالتك..."></textarea>
+        <button id="sendMessage">📩 إرسال</button>
+    </div>
+
+    <div id="fileSection" style="display: none;">
+        <h3>📤 إرسال الملف النهائي</h3>
+        <button id="sendFile">📎 إرسال عبر واتساب</button>
+    </div>
+
+    <button id="logout">🚪 تسجيل الخروج</button>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
